@@ -1,4 +1,3 @@
-import * as pluginImportX from 'eslint-plugin-import-x';
 import * as reactHooks from 'eslint-plugin-react-hooks';
 
 import js from '@eslint/js';
@@ -14,8 +13,6 @@ export default [
   ...tanstackConfig,
   ...tseslint.configs.recommended,
   js.configs.recommended,
-  pluginImportX.flatConfigs.recommended,
-  pluginImportX.flatConfigs.typescript,
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     plugins: {
